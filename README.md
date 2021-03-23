@@ -2,16 +2,16 @@
 
 ## Integrantes:
 
-![01](https://user-images.githubusercontent.com/25289102/112214943-b1335580-8c17-11eb-8c0a-bbd328678e7f.jpg)
-
+<a>
+![image](https://user-images.githubusercontent.com/25289102/112215956-e1c7bf00-8c18-11eb-82bf-943126f736b3.png)
 Juan Carlos Moguel Solis
-
-![02](https://user-images.githubusercontent.com/25289102/112214954-b5f80980-8c17-11eb-8f13-3805ddfafd2e.jpg)
-
+</a>
+<a>
+![image](https://user-images.githubusercontent.com/25289102/112215985-ea1ffa00-8c18-11eb-9713-d8a973b3f4a0.png)
 José Ermilo Cetina Vega
-
-![03](https://user-images.githubusercontent.com/25289102/112214984-bd1f1780-8c17-11eb-8f5a-c0654fb4e0e5.jpg)
-
+</a>
+<a>
+![image](https://user-images.githubusercontent.com/25289102/112216018-f310cb80-8c18-11eb-80d7-b15569f76728.png)
 Juan José Durán Matos
-
+</a>
 
