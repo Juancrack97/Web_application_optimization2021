@@ -1,0 +1,25 @@
+En esta primera entrega desarrollar�n la primera versi�n de un lector Web de RSS feeds personalizable. La aplicaci�n deber� tener las siguiente funcionalidades:
+
+El usuario definir� la url de los feeds que utilizar� (uno o m�s).
+La aplicaci�n colectar� todas las noticias y las almacenar� en una base de datos.
+El proceso de actualizaci�n de las noticias ser� activado por el usuario mediante un bot�n.
+Las noticias deben presentar su fecha, t�tulo, url, descripci�n y categor�as.
+Cuando la p�gina principal se presente listar� las noticias ordenadas por fecha. El usuario puede ordenarlas por cualquier campo.
+El usuario utilizar� una caja de texto para buscar noticias que coincidan con el texto proporcionado.
+Utilicen im�genes y estilos para darle una apariencia atractiva al sitio. Podr�n utilizar componentes, frameworks y cualquier biblioteca que consideren conveniente. La �nica restricci�n es que debe ser hecho con PHP.
+
+Deber�n cargar el c�digo fuente en el repositorio y generar un archivo pdf con las capturas de pantalla que ejemplifiquen las funcionalidades requeridas as� como proporcionar la url del proyecto.
+
+Enlaces �tiles:
+
+https://rockcontent.com/es/blog/feed-rss/
+https://metricool.com/es/que-es-feed-rss/
+https://blog.feedspot.com/world_news_rss_feeds/
+https://simplepie.org/downloads/
+Entrega: uno por equipo.
+
+Formato: PDF. En la caja de texto proporcionen la url del proyecto.
+
+Fecha limite de entrega: 12 de abril.
+
+https://css-tricks.com/video-screencasts/55-adding-rss-content-with-simplepie/
