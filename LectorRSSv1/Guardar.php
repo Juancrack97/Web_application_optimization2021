@@ -24,11 +24,19 @@ for ($i = 0; $i < $itemQty; $i++) {
     $Categoria = htmlspecialchars_decode($NoArticulo->get_category());
     $Link = htmlspecialchars_decode($NoArticulo->get_link());
     $Fecha = htmlspecialchars_decode($NoArticulo->get_date('Y-m-d H:i:s'));
+    echo $Titulo. "<br>";
+    echo $Categoria. "<br>";
+    echo $Descripcion. "<br>";
+    echo $Fecha. "<br>";
+    echo $Link. "<br>";
     
-    $InsertEnt = "INSERT INTO entradas (ID,Titulo,Descripcion,Categoria,Link,Fecha) 
-    VALUES ('$NoArticulo','$Titulo','$Descripcion','$Categoria','$Link','$Fecha')";    
+    $InsertEnt = "INSERT INTO entradas (Titulo,Descripcion,Categoria,Link,Fecha) 
+    VALUES ('$Titulo','$Descripcion','$Categoria','$Link','$Fecha')";    
     mysqli_query($conexion, $InsertEnt);
 }
+$InsertFeed = "INSERT INTO feeds (link) 
+    VALUES ('$url')";    
+    mysqli_query($conexion, $InsertFeed);
 
 //Cierra la conexion a la BD
 @mysqli_close();
