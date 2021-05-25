@@ -1,0 +1,34 @@
+#encabezado{
+    position: relative;
+}
+
+#titulo{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 100%;
+    font-size: 7vw;
+}
+
+#imagenfondo{
+    position: absolute;
+}
+
+#cuerpo{
+    top: -30px;  
+}
+
+.fondo{
+    background-image: url(img/fondo.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    position: relative;  
+}
+
+.ml-5{
+    position: relative;
+}
+
+.background-inputs {
+    background-color: #F2F4F4  !important;
+}
