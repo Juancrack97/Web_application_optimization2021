@@ -19,7 +19,7 @@
                 <form method="post" name="formu" id="formu" class="formulario"  action="index.php" >
                     <p class="font-weight-bold">Buscar un artículo o entrada específica</p>
                     <input type="search" id="search" class="form-control" placeholder="Buscar..." name="CONTENT" onkeyup="mostrarSugerencias(this.value)" size="50" /> 
-                    <input type="submit"  class="mt-2" value="Buscar" name="botonBusq">
+                    <input type="submit"  class="mt-2 fa-buscar" value="      Buscar " name="botonBusq">
                     <div id ="mostrar-sugerencias" class="col-sm-5" ></div>
                 </form>      
             </div>
@@ -29,18 +29,18 @@
                 <form action="Guardar.php" method="post">
                     <p class="font-weight-bold">Agregar nuevo feed</p>
                     <input type="text" class="form-control" placeholder="Ingrese una dirección URL válida de un feed RSS" name="URLRSS" size="50">
-                    <input type="submit" class="mt-2" value="Agregar">
+                    <input type="submit" class="mt-2 fa-agregar"  value=" Agregar">
                 </form>
             </div>   
 
             <div class="jumbotron" id="elemento3">
             <form action="actualizar.php" method="post">
-            <input type="submit" class="mt-5" name="button1"
-                    class="button" onclick="Check()" value="Actualizar" />
+            <input type="submit" class="mt-5 button fa-actualizar" name="button1"
+                     onclick="Check()" value="       Actualizar" />
             </form>
             <form action="ordenar.php" method="post">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ordenar por
+            <button class="dropdown-toggle fa-ordenar" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Ordenar por
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" name="sortElement" href="index.php?ordenar=Fecha">Fecha de publicación</a>
@@ -68,7 +68,7 @@
             
             //Conexion a la BD
             include("DB_Define.php");
-            $resultado = $conexion->query("SELECT Titulo,Descripcion,Categoria,Link,Fecha FROM entradas ORDER BY Fecha DESC");   
+            $resultado = $conexion->query("SELECT Titulo,Descripcion,Categoria,Link,Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas ORDER BY Fecha DESC");   
             //Se agregan condiciones si se realizan las acciones de busqueda o de ordenamiento
             
             error_reporting(0);
@@ -78,6 +78,15 @@
             }
             
             else if ($_GET['ordenar']=='Titulo'){
+                include("ordenar.php");
+            }
+            else if ($_GET['ordenar']=='dia'){
+                include("ordenar.php");
+            }
+            else if ($_GET['ordenar']=='mes'){
+                include("ordenar.php");
+            }
+            else if ($_GET['ordenar']=='anio'){
                 include("ordenar.php");
             }
             

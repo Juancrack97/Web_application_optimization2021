@@ -4,11 +4,26 @@ include("DB_Define.php");
 
 $orden = $_GET['ordenar'];
     if($orden === "Titulo"){
-        $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha FROM entradas ORDER BY Titulo";
+        $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas ORDER BY Titulo";
         $resultado = $conexion->query($sql);
     }
     if($orden === "Fecha"){
-        $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha FROM entradas ORDER BY Fecha DESC";
+        $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas ORDER BY Fecha DESC";
+        $resultado = $conexion->query($sql);
+    }
+    if($orden=== 'dia'){
+      $valor=$_GET["valor"];
+      $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas where DAY(Fecha)='$valor' ORDER BY Fecha DESC";
+        $resultado = $conexion->query($sql);
+    }
+    if($orden=== 'mes'){
+      $valor=$_GET["valor"];
+      $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas where MONTH(Fecha)='$valor' ORDER BY Fecha DESC";
+        $resultado = $conexion->query($sql);
+    }
+    if($orden=== 'anio'){
+      $valor=$_GET["valor"];
+      $sql = "SELECT ID, Titulo, Descripcion, Categoria, Link, Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas where YEAR(Fecha)='$valor' ORDER BY Fecha DESC";
         $resultado = $conexion->query($sql);
     }
    
