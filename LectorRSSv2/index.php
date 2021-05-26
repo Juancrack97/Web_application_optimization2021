@@ -8,7 +8,7 @@
         <script src="CheckActions.js"></script>
         <title>RSS Feed Reader</title>
         
-        <div id="encabezado">
+        <div class="encabezado">
             <img src="img/banner.png" id="banner" style="max-width:100%;width:auto;height:auto;">
             <h1 id="titulo" style="color:white">Consultorio RSS</h1>
 	</div>
@@ -21,7 +21,10 @@
                     <input type="search" id="search" class="form-control" placeholder="Buscar..." name="CONTENT" onkeyup="mostrarSugerencias(this.value)" size="50" /> 
                     <input type="submit"  class="mt-2 fa-buscar" value="      Buscar " name="botonBusq">
                     <div id ="mostrar-sugerencias" class="col-sm-5" ></div>
-                </form>      
+                </form>
+                <form action="navegar.php" method="post">
+                    <input type="submit"  class="mt-2" value="Explorar todas las noticias" name="botonNav">
+                </form>
             </div>
 
             <div class="jumbotron" id="elemento2">
