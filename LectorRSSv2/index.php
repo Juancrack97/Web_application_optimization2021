@@ -8,7 +8,7 @@
         <script src="CheckActions.js"></script>
         <title>RSS Feed Reader</title>
         
-        <div id="encabezado">
+        <div class="encabezado">
             <img src="img/banner.png" id="banner" style="max-width:100%;width:auto;height:auto;">
             <h1 id="titulo" style="color:white">Consultorio RSS</h1>
 	</div>
@@ -21,7 +21,10 @@
                     <input type="search" id="search" class="form-control" placeholder="Buscar..." name="CONTENT" onkeyup="mostrarSugerencias(this.value)" size="50" /> 
                     <input type="submit"  class="mt-2" value="Buscar" name="botonBusq">
                     <div id ="mostrar-sugerencias" class="col-sm-5" ></div>
-                </form>      
+                </form>
+                <form action="navegar.php" method="post">
+                    <input type="submit"  class="mt-2" value="Explorar todas las noticias" name="botonNav">
+                </form>
             </div>
 
             <div class="jumbotron" id="elemento2">
@@ -34,19 +37,19 @@
             </div>   
 
             <div class="jumbotron" id="elemento3">
-            <form action="actualizar.php" method="post">
-            <input type="submit" class="mt-5" name="button1"
+                <form action="actualizar.php" method="post">
+                <input type="submit" class="mt-5" name="button1"
                     class="button" onclick="Check()" value="Actualizar" />
-            </form>
-            <form action="ordenar.php" method="post">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ordenar por
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name="sortElement" href="index.php?ordenar=Fecha">Fecha de publicación</a>
-                <a class="dropdown-item" name="sortElement" href="index.php?ordenar=Titulo">Nombre del título</a>
-            </div>
-            </form>
+                </form>
+                <form action="ordenar.php" method="post">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ordenar por
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" name="sortElement" href="index.php?ordenar=Fecha">Fecha de publicación</a>
+                    <a class="dropdown-item" name="sortElement" href="index.php?ordenar=Titulo">Nombre del título</a>
+                </div>
+                </form>
             </div>
             
         </div>   
