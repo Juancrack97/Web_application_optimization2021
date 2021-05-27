@@ -9,7 +9,7 @@
         <title>RSS Feed Reader</title>
         
         <div class="encabezado">
-            <img src="img/banner.png" id="banner" style="max-width:100%;width:auto;height:auto;">
+            <img src="img/Banner-min.png" id="banner" style="max-width:100%;width:auto;height:auto;">
             <h1 id="titulo" style="color:white">Consultorio RSS</h1>
 	    </div>
         
@@ -59,7 +59,7 @@
     </head>
     <style>
         body {
-            background-image: url("img/fondo.jpg");
+            background-image: url("img/fondo-min.jpg");
             background-repeat: repeat;
         }
     </style>
