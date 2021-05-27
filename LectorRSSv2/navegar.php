@@ -12,8 +12,10 @@
 	<meta name="author">
     <title>Explorador de noticias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="css/heroic-features.css" rel="preload">
+    <link rel="preload" href="css/style.css" TYPE="text/css" MEDIA=screen>
     <link href="css/heroic-features.css" rel="stylesheet">
-    <link REL=StyleSheet HREF="css/style.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="css/style.css" TYPE="text/css" MEDIA=screen>
     
     <title>RSS Feed Reader</title>
         

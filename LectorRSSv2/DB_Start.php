@@ -7,6 +7,7 @@ echo '<script src="./handleVisor.js"></script>';
                 $listaanios = array();
                 $listames = array();
                 $listadias = array();
+
                 
              while ($row = $resultado->fetch_assoc()) {
                 array_push($listaanios,$row['year']);
@@ -58,11 +59,7 @@ echo '<script src="./handleVisor.js"></script>';
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
-           
-                
 
-                
-            
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';        
