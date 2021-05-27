@@ -1,5 +1,5 @@
 # Repositorio del proyecto de optimización de aplicaciones web
-
+Version optimizada lista para entregar 
 ## Integrantes:
 
 
