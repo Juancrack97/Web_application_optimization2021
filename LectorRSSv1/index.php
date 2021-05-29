@@ -18,7 +18,7 @@
                 <form  method="post" name="formu" id="formu" class="formulario"  action="Buscar.php" >
                     <p class="font-weight-bold">Buscar un artículo o entrada específica</p>
                     <input type="search" id="search" class="form-control" placeholder="Buscar..." name="CONTENT" onkeyup="mostrarSugerencias(this.value)" size="50" /> 
-                    <input type="submit"  class="mt-2" value="Buscar">
+                    <input type="submit"  class="mt-2 fa-buscar" value="Buscar">
                     <div id ="mostrar-sugerencias" class="col-sm-5" ></div>
                 </form>      
             </div>

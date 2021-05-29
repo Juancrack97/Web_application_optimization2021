@@ -1,5 +1,5 @@
 # Repositorio del proyecto de optimización de aplicaciones web
-
+Version NO OPTIMIZADA con funciones extras añadidas
 ## Integrantes:
 
 
