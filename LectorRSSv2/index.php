@@ -65,7 +65,8 @@
       
             
             <?php
-            
+            ini_set("memory_limit","1000M");
+
             //Conexion a la BD
             include("DB_Define.php");
             $resultado = $conexion->query("SELECT Titulo,Descripcion,Categoria,Link,Fecha,YEAR(entradas.Fecha) as year ,MONTH(entradas.Fecha) as month , DAY(entradas.Fecha) as day FROM entradas ORDER BY Fecha DESC");   
