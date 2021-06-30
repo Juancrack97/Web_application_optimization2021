@@ -1,0 +1,1 @@
+function Check(){alert("Se han actualizado los datos")}
